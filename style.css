@@ -16,8 +16,8 @@
 .experiences-section{
 padding-left:48px;
 padding-right: 48px;
-padding-top:6px;
-padding-bottom:20px;
+padding-top:12px;
+padding-bottom:32px;
 background-color: var(--background-color);
 }
 
@@ -26,6 +26,7 @@ font-size:50px;
 color: var(--primary-color);
 text-align: center;
 font-family: var(--primary-font);
+padding-bottom: 32px;
 }
 
 
@@ -34,7 +35,7 @@ font-family: var(--primary-font);
   justify-content: space-between;
   gap: 30px;                      
   flex-wrap: wrap;                 
-  margin-bottom: 40px;             
+  margin-bottom: 40px;  
   
 }
 
@@ -66,6 +67,7 @@ font-family: var(--primary-font);
   margin: -80px -180px;
   max-width: 610px; 
   height: auto;
+  padding-bottom: 40px;
 }
 
 
@@ -131,6 +133,9 @@ font-family: var(--primary-font);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
+.experiences-mobile-text{
+  display: none;
+}
 
 
 
@@ -141,7 +146,7 @@ font-family: var(--primary-font);
 .faq-section {
  padding-left: 48px;
  padding-right:48px;
- padding-top: 20px;
+ padding-top: 40px;
  padding-bottom:80px;
  color:var(--background-color);
 }
@@ -151,6 +156,7 @@ font-size:50px;
 color: var(--primary-color);
 text-align: center;
 font-family: var(--primary-font);
+padding-bottom: 32px;
 }
 
 
@@ -303,9 +309,9 @@ font-family: var(--primary-font);
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 564px; 
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* /* gap: 564px;  */
   position: relative;
   z-index: 1;
 }
@@ -329,6 +335,11 @@ font-family: var(--primary-font);
   color: white;
 }
 
+.footer-left img {
+    width: 20%;
+    height: 10%
+  }
+
 
 .social-icons {
   margin-top: 15px;
@@ -348,8 +359,12 @@ font-family: var(--primary-font);
 /* Middle section */
 .footer-middle {
   flex: 1;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column; */
   min-width: 250px;
-  margin-left: 0; /* pushes middle to the right */
+  /* margin-left: 0; pushes middle to the right */
 }
 
 .footer-middle h4 {
@@ -536,15 +551,26 @@ font-family: var(--primary-font);
     font-size: 36px;
   }
 
+  .experiences-mobile-text{
+    display: flex;
+    font-size: 24px;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
   .left-paragraph,
   .right-paragraph {
     font-size: 30px;
     line-height: 1.5;
+    display: none;
   }
 
   .center-image {
-    max-width: 100%;
-    margin: 20px auto;
+    display: none;
+    /* max-width: 100%; */
+    /* margin: 20px auto; */
   }
 
   .exp-card img {
@@ -593,8 +619,17 @@ font-family: var(--primary-font);
     gap: 30px;
   }
 
+  .footer-left{
+    max-width: 100px;
+  }
+
+  .footer-left img {
+    width: 50%;
+    height: 10%
+  }
+
   .footer-logo {
-    width: 140px;
+    width: 100px;
   }
 
   .footer-middle h4 {
@@ -635,7 +670,7 @@ font-family: var(--primary-font);
     font-size: 28px;
   }
 }
-=======
+
 .btn {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -647,6 +682,8 @@ font-family: var(--primary-font);
   padding: 4px 0px;
   max-width: 180px;
 }
+
+/* ==================================================Afeef======================================================= */
 
 /* Nav-Bar======================================== */
 header {
